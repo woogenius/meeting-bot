@@ -35,7 +35,7 @@ async function postFridayMeetingForThisWeek() {
   );
 }
 
-cron.schedule('20 10 * * 1-4', postDailyMeetingForTmr);
+cron.schedule('0 12 * * 1-4', postDailyMeetingForTmr);
 cron.schedule('0 18 * * 5', postMondayMeetingForNextWeek);
 cron.schedule('0 13 * * 5', postFridayMeetingForThisWeek);
 
