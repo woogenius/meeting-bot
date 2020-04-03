@@ -37,7 +37,7 @@ async function postFridayMeetingForThisWeek() {
 
 cron.schedule('0 12 * * 1-4', postDailyMeetingForTmr);
 cron.schedule('0 18 * * 5', postMondayMeetingForNextWeek);
-cron.schedule('0 13 * * 5', postFridayMeetingForThisWeek);
+cron.schedule('0 12 * * 5', postFridayMeetingForThisWeek);
 
 // Post the generated message to Slack
 async function post(text: string) {
